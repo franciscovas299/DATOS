@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Datos de Clientes</h1>
+        <form id="formularioCliente">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-záéíóúüñÁÉÍÓÚÜÑ\s]+" required>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" pattern="[A-Za-záéíóúüñÁÉÍÓÚÜÑ\s]+" required>
+            
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" pattern="[0-9]{10}" required>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" rows="4" required></textarea>
+            <small class="error"></small>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
